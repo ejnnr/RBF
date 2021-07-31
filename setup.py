@@ -30,5 +30,13 @@ if __name__ == '__main__':
         author_email='treverhines@gmail.com',
         url='www.github.com/treverhines/RBF',
         packages=['rbf', 'rbf.pde'],
+        install_requires=[
+          'numpy>=1.10',
+          'scipy',
+          'sympy',
+          'cython',
+          'rtree',
+          'scikit-sparse>=0.4.2',
+        ],
         ext_modules=cythonize(ext),
         license='MIT')
